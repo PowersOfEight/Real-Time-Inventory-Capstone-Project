@@ -6,7 +6,7 @@ import supervision as sv
 import numpy as np
 
 # Initialize the model
-model = YOLO('car_det_model_0.5.pt')
+model = YOLO('car_det_model_0.6.pt')
 
 # Create and hide the Tkinter root window
 root = tk.Tk()
@@ -40,7 +40,7 @@ while cap.isOpened():
     )
 
     # Annotate the frame with oriented bounding boxes for high confidence detections
-    oriented_box_annotator = sv.OrientedBoxAnnotator()
+    oriented_box_annotator = sv.OrientedBoxAnnotator(thickness=4)
     annotated_frame = oriented_box_annotator.annotate(
         scene=frame,
         detections=high_conf_detections
