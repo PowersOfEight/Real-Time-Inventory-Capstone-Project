@@ -1,0 +1,8 @@
+opencv-python
+flask
+numpy
+supervision
+tk
+torch
+ultralytics
+Werkzeug
