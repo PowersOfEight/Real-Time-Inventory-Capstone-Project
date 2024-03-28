@@ -3,7 +3,7 @@ import sys
 import os
 
 def install_dependencies():
-    # Check if pip is installed
+    # # Check if pip is installed
     try:
         subprocess.check_call([sys.executable, '-m', 'pip', '--version'])
     except subprocess.CalledProcessError:
@@ -20,9 +20,13 @@ def install_dependencies():
 
     print("Dependencies installed successfully.")
 
+
 if __name__ == "__main__":
+
     # Change directory to the script's directory
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
     # Call the function to install dependencies
     install_dependencies()
+
+import os
