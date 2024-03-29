@@ -13,7 +13,6 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
 def index():
-    # return app.send_static_file('./index.html')
     return app.send_static_file('index2.html')
 
 @app.route('/upload', methods=['POST'])
