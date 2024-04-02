@@ -42,6 +42,10 @@ The car counter demo will identify and count cars from an overhead perspective u
 ```
 git clone https://github.com/PowersOfEight/Real-Time-Inventory-Capstone-Project.git
 ```
+* Navigate into the project root folder and into install-dependencies
+```
+cd Real-Time-Inventory-Capstone-Project/install-dependencies
+```
 ## Installing on Windows
 
     
