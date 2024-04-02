@@ -3,9 +3,9 @@
 ## About
 The car counter demo will identify and count cars from an overhead perspective using a YOLOv8 Model.  For information about YOLO, please [visit the YOLOv8 docs](https://docs.ultralytics.com/).
 
-## System Requirements
-### Demo Requirements
+## Demo Requirements
 * An operating system such as Windows, Mac, or Linux that has access to a terminal (NOTE: the commands shown here are for Windows, but should be applicable to Mac and Linux as well)
+* If running on Windows, you will need [the latest Microsoft Visual C++ Redistributable Version](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist)
 * [git](https://git-scm.com/)
     * To ensure that you have git installed, open a terminal or command prompt and type 
     ```
@@ -49,6 +49,22 @@ cd Real-Time-Inventory-Capstone-Project/install-dependencies
 ```
 python -m install-deps
 ```
-
-    
-    
+## Demonstration session
+* Navigate into the root of the project and run main.py
+```
+python -m main
+```
+<pre>
+ * Serving Flask app 'main'
+ * Debug mode: on
+<span style="color: red">WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.</span>
+ * Running on http://127.0.0.1:5000
+<span style="color: gold">Press CTRL+C to quit</span>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 110-296-855
+</pre>
+* Now open a browser and type the following into the navigation bar:
+```
+http://localhost:5000
+```
