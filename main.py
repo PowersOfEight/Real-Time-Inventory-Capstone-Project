@@ -21,8 +21,7 @@ class SimpleColor:
 
 @app.route('/')
 def index():
-    # return app.send_static_file('./index.html')
-    return app.send_static_file('index2.html')
+    return app.send_static_file('index.html')
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
