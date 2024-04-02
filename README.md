@@ -68,3 +68,16 @@ python -m main
 ```
 http://localhost:5000
 ```
+* You'll be greeted with the UI
+
+
+![Demo UI](./images/Demo-UI.jpg)
+
+* For convenience, there is a demo video with the appropriate 1280x720 resolution in the `demo-video` folder.  If you open it, you'll be greeted to a demonstration of the car counter:
+
+![Demo Screenshot](./images/demo-video-screenshot.jpg)
+
+* The car count is in the upper-left hand corner of the screen
+* The numbers that appear above each car are the confidence scores of the prediction
+
+## That's all for now, more coming soon!
