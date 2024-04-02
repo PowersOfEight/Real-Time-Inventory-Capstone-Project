@@ -10,6 +10,14 @@ app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+class SimpleColor:
+    def __init__(self, rgb_tuple):
+        # OpenCV uses BGR format, so we reverse the RGB tuple
+        self.bgr = rgb_tuple[::-1]
+    
+    def as_bgr(self):
+        return self.bgr
+
 
 @app.route('/')
 def index():
@@ -62,7 +70,8 @@ def generate_frames(video_path):
         )
 
         # Annotate the frame with oriented bounding boxes for high confidence detections
-        oriented_box_annotator = sv.OrientedBoxAnnotator(thickness=4)
+        my_color = SimpleColor((255, 255, 0))
+        oriented_box_annotator = sv.OrientedBoxAnnotator(color=my_color,thickness=4)
         annotated_frame = oriented_box_annotator.annotate(
             scene=frame,
             detections=high_conf_detections
@@ -73,6 +82,9 @@ def generate_frames(video_path):
         for bbox, conf in zip(high_conf_detections.xyxy, high_conf_detections.confidence):
             x_center = int((bbox[0] + bbox[2]) / 2)
             y_center = int((bbox[1] + bbox[3]) / 2)
+            # To make the text appear as having a black border we will create 
+            cv2.putText(annotated_frame, f'{conf:.2f}', (x_center, y_center), font, 0.5, (0, 0, 0), 4,
+                        cv2.LINE_AA)
             cv2.putText(annotated_frame, f'{conf:.2f}', (x_center, y_center), font, 0.5, (255, 255, 255), 2,
                         cv2.LINE_AA)
 
