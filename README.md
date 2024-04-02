@@ -14,17 +14,24 @@ The car counter demo will identify and count cars from an overhead perspective u
     </code></pre> 
 * A browser such as Chrome, Firefox, Safari, etc.
 * A current release of [python](https://www.python.org/downloads/) with [pip](https://pip.pypa.io/en/stable/installation/) installed. (NOTE: [anaconda](https://www.anaconda.com/download) will work as well, but you may have to translate some of the following steps using the [conda docs](https://docs.anaconda.com/).  If you're unsure, just use python)
-    * To check that you've got python installed, open a terminal and type in `python --version`.  You're output should look something like this:
-    <pre><code>
-    C:\some\dir>python --version
+    * To check that you've got python installed, open a terminal and type in 
+    ```
+    python --version
+    ```  
+    You're output should look something like this:
+    <pre>
+    C:\some\dir> python --version
     Python 3.11.8
-    </code></pre>
+    </pre>
     Note that the directory given here is only for example purposes.
-    * Next, check that pip is installed by typing `python -m pip --version`.  
-    <pre><code>
+    * Next, check that pip is installed by typing 
+    ```
+    python -m pip --version
+    ```.  
+    <pre>
     C:\some\dir>python -m pip --version
     pip 24.0 from C:\install\dir\Python311\site-packages\pip (python 3.11)
-    </code></pre>
+    </pre>
 
 ## Getting Started
 * Clone the project 
