@@ -7,11 +7,15 @@ The car counter demo will identify and count cars from an overhead perspective u
 ### Demo Requirements
 * An operating system such as Windows, Mac, or Linux that has access to a terminal (NOTE: the commands shown here are for Windows, but should be applicable to Mac and Linux as well)
 * [git](https://git-scm.com/)
-    * To ensure that you have git installed, open a terminal or command prompt and type `git --version`
-    <pre><code>
+    * To ensure that you have git installed, open a terminal or command prompt and type 
+    ```
+    git --version
+    ```
+    Your output should look something like this
+    <pre>
     C:\some\dir>git --version
     git version 2.42.0.windows.2
-    </code></pre> 
+    </pre> 
 * A browser such as Chrome, Firefox, Safari, etc.
 * A current release of [python](https://www.python.org/downloads/) with [pip](https://pip.pypa.io/en/stable/installation/) installed. (NOTE: [anaconda](https://www.anaconda.com/download) will work as well, but you may have to translate some of the following steps using the [conda docs](https://docs.anaconda.com/).  If you're unsure, just use python)
     * To check that you've got python installed, open a terminal and type in 
