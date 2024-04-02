@@ -27,7 +27,7 @@ The car counter demo will identify and count cars from an overhead perspective u
     * Next, check that pip is installed by typing 
     ```
     python -m pip --version
-    ```.  
+    ```
     <pre>
     C:\some\dir>python -m pip --version
     pip 24.0 from C:\install\dir\Python311\site-packages\pip (python 3.11)
