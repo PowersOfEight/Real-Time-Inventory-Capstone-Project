@@ -45,9 +45,10 @@ git clone https://github.com/PowersOfEight/Real-Time-Inventory-Capstone-Project.
 * Navigate into the project root folder and into the `install-dependencies` directory and run `install-deps.py`
 ```
 cd Real-Time-Inventory-Capstone-Project/install-dependencies
-python -m install-deps.py
 ```
-## Installing on Windows
+```
+python -m install-deps
+```
 
     
     
